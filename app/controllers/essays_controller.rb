@@ -1,6 +1,10 @@
 class EssaysController < ApplicationController
   before_action :set_essay, only: %i[ show edit update destroy ]
 
+  # Home
+  def home
+  end
+
   # GET /essays or /essays.json
   def index
     @essays = Essay.all

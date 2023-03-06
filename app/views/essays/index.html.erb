@@ -6,9 +6,7 @@
   <% @essays.each do |essay| %>
     <%= render essay %>
     <p>
-      <%= link_to "Show this essay", essay %>
+      <%= link_to "Show", essay %>
     </p>
   <% end %>
 </div>
-
-<%= link_to "New essay", new_essay_path %>
